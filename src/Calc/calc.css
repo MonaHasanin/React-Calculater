@@ -1,0 +1,124 @@
+
+*{
+     text-decoration: none;
+     list-style: none;
+    }
+     body, main {
+    height: 100vh;
+    background-image: url("https://images.unsplash.com/photo-1528722828814-77b9b83aafb2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80");
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    }
+
+
+    /* ----------------- NavBar-----------------  */
+    .mainNav{
+        margin: auto;
+        width: 80%;
+        display: flex;
+        justify-content: space-around;
+        font-size: 1.1em;
+        text-shadow: rgba(112, 102, 253, 0.726) 1px 0 10px;
+        background-color: #d0e1f1;
+        color: #021a3d;
+        gap: 150px;
+        border-radius: 20px;
+    }
+    .mainNav h1{
+        font-weight: 900;
+
+    }
+    .mainNav li {
+        display: inline;
+        /* justify-content: space-around; */
+        /* gap: 20px; */
+        font-weight: 800;
+        padding :5px;
+
+    }
+    .mainNav li:hover , .active {
+        color:#0d6efd;
+        transition: 0.7s ease;
+    }
+
+    /* ----------------- calculator----------------- */
+ 
+.calculator {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    grid-template-rows: repeat(4, 60px);
+    background-color: #021a3d;
+    border-radius: 10%;
+    border: 1px solid #fff;
+    width: 300px;
+    margin-top: 13px;
+    margin-left: 35%;
+}  
+input {
+     font-size: 15px;
+     text-align: center;
+      box-shadow: 0 0 20px -10px;
+      transition: 0.7s ease;
+      background-color: #021a3d;
+      border: none;
+      outline: none;
+      font-weight: bold;
+      justify-content: center;
+      align-items: center;
+      color: #ccc;
+      font-family: monospace;
+      width: 60px;
+      height: 60px;
+      cursor: pointer;
+      margin: 3px;
+      border-radius: 15px;
+ }
+ input:hover {
+    background-color: rgb(11, 78, 78);
+    transition: 0.7s ease;
+ }
+
+.display {
+    width: 95%;
+    border: 1px solid;
+    background-color: rgb(11, 78, 78);
+    color: white;
+    font-size: 15px;
+    direction: rtl;
+}
+
+.display::placeholder{
+    font-size: 15px;
+    padding: 0 5px;
+}
+
+.equal {
+    width: 125px;
+}
+
+
+
+
+/* --------------------Footer---------------- */
+
+footer {
+    width: 80%;
+    background-color: #d0e1f1;
+    position: fixed;
+    bottom: 0;
+    margin-left :10%;
+    border-radius: 20px
+}
+
+footer h1 , p{
+    align-items: center;
+    justify-content: center;
+    font-size: 1em;
+    text-shadow: rgba(112, 102, 253, 0.726) 1px 0 10px;
+    color: #021a3d;
+    margin-left :40%;
+
+}
